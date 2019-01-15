@@ -1363,7 +1363,7 @@ public class DataWarehouseServiceImpl implements DataWarehouseService {
     }
 
     private Date getARTInitDate(Patient patient) {
-        List<Order> orders = orderService.getOrdersByPatient(patient);
+       /* List<Order> orders = orderService.getOrdersByPatient(patient);
         if (orders != null && !orders.isEmpty()) {
             Collections.sort(orders, new Comparator<Order>() {
                 @Override
@@ -1372,14 +1372,14 @@ public class DataWarehouseServiceImpl implements DataWarehouseService {
                 }
             });
             return orders.get(0).getStartDate();
-        }
+        }*/
         return null;
     }
 
     private Map<String, List<Order>> getDrugOrders(Patient patient) {
         Map<String, List<Order>> collectiveOrders = new LinkedHashMap<String, List<Order>>();
 
-        List<Order> orders = orderService.getOrdersByPatient(patient);
+        /*List<Order> orders = orderService.getOrdersByPatient(patient);
         if (orders != null && !orders.isEmpty()) {
             Collections.sort(orders, new Comparator<Order>() {
                 @Override
@@ -1395,7 +1395,7 @@ public class DataWarehouseServiceImpl implements DataWarehouseService {
                 List<Order> orderedAtOnce = collectiveOrders.get(date);
                 orderedAtOnce.add(order);
             }
-        }
+        }*/
         return collectiveOrders;
     }
 
