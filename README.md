@@ -1,4 +1,4 @@
-KenyaDQ OpenMRS Module
+KpDQ OpenMRS Module
 ===========================
 
-Data quality management for KenyaEMR
+Data quality management for Key Population System
